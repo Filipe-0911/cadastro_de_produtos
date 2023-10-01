@@ -1,14 +1,26 @@
 [
     {
-        "codigo": "001",
-        "nome": "Celular",
-        "quantidade": 100,
-        "valor": 2000
-    },
-    {
         "codigo": "002",
         "nome": "Notebook",
         "quantidade": 50,
         "valor": 4000
+    },
+    {
+        "codigo": "001",
+        "nome": "Celular",
+        "quantidade": 150,
+        "valor": 2000
+    },
+    {
+        "codigo": "003",
+        "nome": "Relogio",
+        "quantidade": 150,
+        "valor": 349.99
+    },
+    {
+        "codigo": "004",
+        "nome": "Mouse",
+        "quantidade": 200,
+        "valor": 650.99
     }
 ]
