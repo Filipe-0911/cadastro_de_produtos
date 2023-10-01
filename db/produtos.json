@@ -22,5 +22,17 @@
         "nome": "Mouse",
         "quantidade": 200,
         "valor": 650.99
+    },
+    {
+        "codigo": "004",
+        "nome": "Teclado",
+        "quantidade": 350,
+        "valor": 450.89
+    },
+    {
+        "codigo": "005",
+        "nome": "Tenis",
+        "quantidade": 170,
+        "valor": 599
     }
 ]

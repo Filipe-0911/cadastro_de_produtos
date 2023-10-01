@@ -1,5 +1,14 @@
 [
     {
         "nome": "Roupas"
+    },
+    {
+        "nome": "Eletronicos"
+    },
+    {
+        "nome": "Eletrodomesticos"
+    },
+    {
+        "nome": "Cal\u00e7ados"
     }
 ]

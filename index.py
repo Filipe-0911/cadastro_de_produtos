@@ -2,9 +2,12 @@ from classes.Produto import Produto
 from classes.Categoria import Categoria
 
 
-produto = Produto('004', 'Mouse', 200, 650.99)
-produto.inserir()
-produto.listarTodos()
+Categoria.listarTodos()
 
-# categoria = Categoria('Roupas')
+# produto = Produto('005', 'Tenis', 170, 599)
+# produto.inserir()
+# produto.listarTodos()
+
+# categoria = Categoria('calçados')
 # categoria.inserir()
+# categoria.listarTodos()

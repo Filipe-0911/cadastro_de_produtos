@@ -6,27 +6,22 @@ class AbstractCrud:
         return self.__dict__
     
     def inserir(self):
-
         lista = self.lerArquivo()
-
         lista.append(self.detalhar())
-
-        with open('db/produtos.json', 'w') as file:
+        with open(self.arquivo, 'w') as file:
              json.dump(lista, file, indent=4)
-
         print('Registro cadastrado com sucesso')
 
-    def listarTodos(self):
-
-        lista = self.lerArquivo()
-
+    @classmethod
+    def listarTodos(cls):
+        lista = cls.lerArquivo()
         for i, p in enumerate(lista):
             print(f"{i} - {p}")
 
-    def lerArquivo(self):
-
+    @classmethod
+    def lerArquivo(cls):
         try:
-            with open('db/produtos.json') as file:
+            with open(cls.arquivo) as file:
                 return json.load(file)
         except Exception:
                 return []
