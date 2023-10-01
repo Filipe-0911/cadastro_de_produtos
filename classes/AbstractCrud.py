@@ -9,9 +9,29 @@ class AbstractCrud(ABC):
     def inserir(self):
         lista = self.lerArquivo()
         lista.append(self.detalhar())
+        self.__gravarArquivo(lista)
+
+        print('Registro Cadastrado com sucesso')
+
+    def alterar(self, item):
+        lista = self.lerArquivo()
+        lista[item] = self.detalhar()
+        self.__gravarArquivo(lista)
+
+        print('Registro Alterado com sucesso')
+
+    def __gravarArquivo(self, lista):
         with open(self.arquivo, 'w') as file:
              json.dump(lista, file, indent=4)
-        print('Registro cadastrado com sucesso')
+
+
+    @classmethod
+    def excluir(cls, item):
+        lista = cls.lerArquivo()
+        del lista[item]
+        
+        with open(cls.arquivo, 'w') as file:
+             json.dump(lista, file, indent=4)
 
     @classmethod
     def listarTodos(cls):
@@ -20,9 +40,12 @@ class AbstractCrud(ABC):
             print(f"{i} - {p}")
 
     @classmethod
-    def lerArquivo(cls):
+    def lerArquivo(cls, item = None):
         try:
             with open(cls.arquivo) as file:
-                return json.load(file)
+                lista =  json.load(file)
+
+                return lista[item] if isinstance(item, int) else lista
+
         except Exception:
                 return []
