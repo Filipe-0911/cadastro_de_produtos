@@ -1,6 +1,7 @@
 import json
+from abc import ABC
 
-class AbstractCrud:
+class AbstractCrud(ABC):
 
     def detalhar(self):
         return self.__dict__
