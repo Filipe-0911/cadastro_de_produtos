@@ -1,11 +1,5 @@
 [
     {
-        "codigo": "001",
-        "nome": "Notebook",
-        "quantidade": "100",
-        "valor": "4000"
-    },
-    {
         "codigo": "002",
         "nome": "Celular",
         "quantidade": "500",
@@ -18,9 +12,9 @@
         "valor": "1450"
     },
     {
-        "codigo": "004",
-        "nome": "Rel\u00f3gio",
-        "quantidade": "360",
-        "valor": "349.99"
+        "codigo": "001",
+        "nome": "Notebook",
+        "quantidade": 750,
+        "valor": 4300
     }
 ]

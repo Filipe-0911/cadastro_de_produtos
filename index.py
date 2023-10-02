@@ -29,5 +29,19 @@ while opcao !=0:
 
             produto = Produto(codigo, nome, quantidade, valor)
             produto.inserir()
-        case 3: pass
-        case 4: pass
+        case 3: 
+            Produto.listarTodos()
+            selecionado = int(input("Qual item deseja ALTERAR? "))
+            item = Produto.lerArquivo(selecionado)
+
+            quantidade = int(input("Qual a nova QUANTIDADE? "))
+            valor = int(input("Qual a nova VALOR? "))
+
+            produto = Produto(item['codigo'], item['nome'], quantidade, valor)
+            produto.alterar(selecionado)
+
+        case 4:
+            Produto.listarTodos()
+            selecionado = int(input("Digite o número do item que deseja EXCLUIR: "))
+
+            Produto.excluir(selecionado)
