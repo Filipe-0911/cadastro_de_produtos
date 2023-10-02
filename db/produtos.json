@@ -1,32 +1,26 @@
 [
     {
         "codigo": "001",
+        "nome": "Notebook",
+        "quantidade": "100",
+        "valor": "4000"
+    },
+    {
+        "codigo": "002",
         "nome": "Celular",
-        "quantidade": 150,
-        "valor": 2000
+        "quantidade": "500",
+        "valor": "2500"
     },
     {
         "codigo": "003",
-        "nome": "Relogio",
-        "quantidade": 150,
-        "valor": 349.99
+        "nome": "Tablet",
+        "quantidade": "190",
+        "valor": "1450"
     },
     {
         "codigo": "004",
-        "nome": "Mouse",
-        "quantidade": 200,
-        "valor": 650.99
-    },
-    {
-        "codigo": "004",
-        "nome": "Teclado",
-        "quantidade": 200,
-        "valor": 150
-    },
-    {
-        "codigo": "005",
-        "nome": "Tenis",
-        "quantidade": 170,
-        "valor": 599
+        "nome": "Rel\u00f3gio",
+        "quantidade": "360",
+        "valor": "349.99"
     }
 ]
